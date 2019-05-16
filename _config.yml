@@ -1,0 +1,91 @@
+title: Ophelia Demo
+email: joshua.e.reinhardt@gmail.com
+description: >-
+  A jekyll theme for making personalized professional portfolio sites
+url: https://jereinhardt.github.io # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /ophelia-demo
+
+main_navigation:
+  # logo: ""
+  cta_path: "#contact"
+  cta_text: Contact Me
+  items:
+  - text: About
+    path: "/#about"
+  - text: Portfolio
+    path: "/#portfolio"
+  site_name: "Ophelia"
+
+hero:
+  background: url('/ophelia-demo/assets/img/hero.jpg')
+  cta_path: "#about"
+  cta_text: Learn More
+  description: Great at finding solutions that work.  Not so great at swimming.
+  subtitle: would-be nun turned designer
+  title: Ophelia
+
+portfolio:
+  title: Portfolio
+
+about:
+  image: /assets/img/profile.png
+  title: About Me
+  description: >
+    I make <strong>more working mockups</strong> of working websites and 
+    applications than any other designer working today.
+
+contact:
+  form:
+    action: "https://formspree.io/joshua.e.reinhardt@gmail.com"
+    email:
+      label: Email
+      name: _replyto
+      error: Please enter a valid email address.
+    message:
+      label: Message
+      name: message
+      error: Please leave a message.
+    name:
+      label: Name
+      name: name
+      error: Please enter your name.
+    phone:
+      label: Phone Number
+      name: phone
+    submit: Send
+    thank_you_redirect: /thank_you
+  title: Get in Touch
+
+social:
+  - name: Email
+    link: mailto:opheliaofdenmark@gmail.com
+  - name: Twitter
+    link: "#"
+  - name: LinkedIn
+    link: "#"
+
+footer:
+  owner: Ophelia of Denmark
+
+# Build settings
+markdown: kramdown
+theme: ophelia
+remote_theme: jereinhardt/ophelia
+plugins:
+  - jekyll-feed
+
+collections:
+  projects:
+    output: true
+    permalink: /ophelia-demo/projects/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap    
