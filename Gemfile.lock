@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jereinhardt/ophelia.git
-  revision: cf18b0fbd6cafcf23feaed2e38d77b7142082eb4
+  revision: a3d7a61267175593c499fbbca54559c9565a20b6
   specs:
     ophelia (0.1.0)
       jekyll (~> 3.4)
